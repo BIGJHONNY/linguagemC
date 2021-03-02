@@ -19,7 +19,23 @@ char personal = 's';
 int periodo = 1;
 float cargaHoraria = 30.5;
 double salario = 3500.65;
-printf("ACADEMIA PHISICAL\n");
+system("color 81");
+printf("'########::'####::'######:::\n");
+printf(" ##.... ##:. ##::'##... ##::\n");
+printf(" ##:::: ##:: ##:: ##:::..:::\n");
+printf(" ########::: ##:: ##::'####:\n");
+printf(" ##.... ##:: ##:: ##::: ##::\n");
+printf(" ##:::: ##:: ##:: ##::: ##::\n");
+printf(" ########::'####:. ######:::\n");
+printf("........:::....:::......::::\n");
+printf("'########::'#######::'########:::'######::'########:\n");
+printf(" ##.....::'##.... ##: ##.... ##:'##... ##: ##.....::\n");
+printf(" ##::::::: ##:::: ##: ##:::: ##: ##:::..:: ##:::::::\n");
+printf(" ######::: ##:::: ##: ########:: ##::::::: ######:::\n");
+printf(" ##...:::: ##:::: ##: ##.. ##::: ##::::::: ##...::::\n");
+printf(" ##::::::: ##:::: ##: ##::. ##:: ##::: ##: ##:::::::\n");
+printf(" ##:::::::. #######:: ##:::. ##:. ######:: ########:\n");
+printf("..:::::::::.......:::..:::::..:::......:::........::\n");
 printf("_____________________________\n");
 // %s -> Ler o tipo de variável
 // , (vírgula) concatenar(unir) um texto com o conteúdo da variável
@@ -33,10 +49,12 @@ printf("_____________________________\n");
 system("pause");
 system("cls");
 // Entrada de dados
+system("color e0");
 char aluno[50];
 char sexo;
 int idade;
 float peso, altura;
+float imc;
 printf("CADASTRO DE ALUNO \n\n");
 printf("Nome do aluno(a): ");
 // o comando gets é usado especificamente para capturar String (char[])
@@ -62,6 +80,8 @@ printf("Sexo: %c\n", sexo);
 printf("Idade: %d\n", idade);
 printf("Peso: %.2f\n", peso);
 printf("Altura: %.2f\n", altura);
+imc = peso / (altura * altura);
+printf("IMC: %.2f\n", imc);
 printf("______________________________\n");
 system("pause");
 return 0;
